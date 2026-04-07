@@ -1,0 +1,59 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "trophy-store-backend"
+version = "1.0.0"
+description = "Production-ready FastAPI backend for trophy/awards e-commerce store with multi-payment, admin panel, and catalog management"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [
+  { name="PrintOscar Team", email="team@printoscar.com" },
+]
+dependencies = [
+  "fastapi==0.115.12",
+  "uvicorn[standard]==0.34.0",
+  "sqlalchemy==2.0.39",
+  "asyncpg==0.30.0",
+  "alembic==1.15.1",
+  "pydantic==2.11.1",
+  "pydantic-settings==2.8.1",
+  "python-jose[cryptography]==3.3.0",
+  "passlib[bcrypt]==1.7.4",
+  "python-multipart==0.0.20",
+  "email-validator==2.2.0",
+  "stripe==7.8.0",
+  "paypal-checkout-sdk==1.0.3",
+  "adyen==9.2.0",
+  "httpx==0.26.0",
+  "cryptography==41.0.8"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.0",
+  "httpx",
+  "pytest-asyncio",
+  "black",
+  "ruff",
+  "mypy"
+]
+docs = [
+  "mkdocs",
+  "mkdocs-material"
+]
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
