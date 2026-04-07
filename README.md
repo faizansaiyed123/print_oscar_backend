@@ -90,28 +90,7 @@ scripts/run_dev.ps1  # Windows
 
 ✅ **Frontend ready**: Connect to `/api/v1` endpoints.
 
-## 🛠️ Production Deployment
-
-```yaml
-# docker-compose.yml (add this file)
-version: '3.8'
-services:
-  app:
-    build: .
-    ports: - '8000:8000'
-    env_file: .env
-    depends_on: [db, redis]
-  db:
-    image: postgres:15
-    environment:
-      POSTGRES_DB: trophy_store
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: root
-  redis:
-    image: redis:7
-```
-
-**Scaling**: Gunicorn/Uvicorn, Nginx reverse proxy (recommended).
+**Production**: Deploy with Gunicorn/Uvicorn workers + Nginx reverse proxy.
 
 ## 📚 API Endpoints
 
