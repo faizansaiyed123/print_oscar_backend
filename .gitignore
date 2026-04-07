@@ -26,3 +26,4 @@ storage/*
 dist/
 build/
 *.log
+.env.example.payment
