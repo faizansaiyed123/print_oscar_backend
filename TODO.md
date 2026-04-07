@@ -25,8 +25,8 @@ Status: In Progress
    - Categorize scripts/ subfolders if needed
 
 6. [ ] **Branch & Commits**
-   - `git checkout -b blackboxai/professional-setup`
-   - Staged commits per feature
+✅ `git checkout main` (renamed from blackboxai/professional-setup)
+   - Full project committed and pushed to main
 
 7. [ ] **GitHub Integration**
    - `git remote add origin https://github.com/faizansaiyed123/print_oscar_backend.git`
