@@ -19,14 +19,14 @@ Production-ready **FastAPI backend** for PrintOscar trophy/awards e-commerce sto
 - 📱 Responsive API design
 
 ### Admin Panel
-- 📊 Dashboard, reports (sales/customers/products/inventory)
-- 📦 Catalog mgmt (CRUD/bulk import/price/stock/SEO)
-- 📋 Orders (status/shipping/invoice/refund)
-- 👨‍💼 Customers (mgmt/files/emails/password reset)
-- 🎟️ Coupons, inventory adjustments, shipping/tax rules
-- 🖼️ Media library (upload/compress/list)
-- ⚙️ Settings, banners/campaigns/newsletters, roles/permissions
-- 🔍 Audit logs, redirects/sitemaps
+- 📊 Dashboard & reports (sales/customers/products/inventory)
+- 📦 Catalog CRUD (products/categories/pricing/stock)
+- 📋 Orders mgmt (status/shipping/refunds)
+- 👥 Customers mgmt (profiles/files)
+- 🎛️ Inventory, shipping/tax rules
+- 🖼️ Media library (upload/compress)
+- ⚙️ Settings, banners, newsletter subscribers
+- 📋 Audit logs, redirect rules
 
 ### Payments (Multi-Gateway)
 - Stripe, PayPal, Adyen support
@@ -111,7 +111,7 @@ services:
     image: redis:7
 ```
 
-**Scaling**: Gunicorn + Uvicorn workers, Celery for emails, Nginx reverse proxy.
+**Scaling**: Gunicorn/Uvicorn, Nginx reverse proxy (recommended).
 
 ## 📚 API Endpoints
 
