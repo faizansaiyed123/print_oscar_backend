@@ -1,0 +1,18 @@
+fastapi==0.115.12
+uvicorn[standard]==0.34.0
+sqlalchemy==2.0.39
+asyncpg==0.30.0
+alembic==1.15.1
+pydantic==2.11.1
+pydantic-settings==2.8.1
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+python-multipart==0.0.20
+email-validator==2.2.0
+# Payment processing dependencies
+stripe==7.8.0
+paypal-checkout-sdk==1.0.3
+adyen==9.2.0
+httpx==0.26.0
+cryptography==41.0.8
+fernet==0.2.1
